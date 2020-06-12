@@ -1,181 +1,133 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
-<html>  
-    <head>  
-        <title>个人主页</title>  
-        <style>  
-        * {   
-          padding: 0px;   
-            margin: 0px;   
-        }   
-        body {   
-            background: url("images/bg_body0.gif");   
-            font-size: 14px;   
-        }   
-  
-        table {   
-            width: 981px;   
-            border: 0px;   
-            margin: 0px auto;   
-        }   
-        tr {   
-            width: 100%;   
-        }   
-        td {   
-            padding: 0px;   
-        }   
-        #centertd {   
-            border-left-style: dotted;   
-            border-right-style: dotted;   
-            border-left-color: green;   
-            border-right-color: green;   
-        }   
-        #nav a {   
-            text-decoration: none;   
-            color: blue;   
-        }   
-        #nav a:hover {   
-            color: white;   
-            border-bottom: 2px solid orchid;   
-        }   
-        a.hover img {   
-            width: 400;   
-            height: 400;   
-        }   
-        </style>  
-    </head>  
-  
-    <body>  
-      <!--top部分-->  
-        <table>  
-            <tr height="130">  
-                <td background="images/topbg.jpg" width="581" valign="top">  
-                    <table>  
-                        <tr height="110">  
-                            <td>  
-                                <object width="700" height="108">  
-                                    <param name="movie" value="flash/xd.swf" />  
-                                    <param name="quality" value="high" />  
-                                    <param name="wmode" value="transparent" />  
-                                    <embed src="flash/xd.swf" wmode="transparent" width="700" height="108"></embed>  
-                                </object>  
-                            </td>  
-                            <td align="right">  
-                                <object width="281" height="35">  
-                                    <param name="movie" value="flash/clock.swf" />  
-                                    <param name="quality" value="high" />  
-                                    <param name="wmode" value="transparent" />  
-                                    <embed src="flash/clock.swf" wmode="transparent" width="281" height="40"></embed>  
-                                </object>  
-                            </td>  
-                        </tr>  
-                        <tr height="20">  
-                            <td>  
-                                <div id="nav">  
-                                     <a href="MyFirstPage.html"><b>主页</b></a>  
-                                     <a href="http://student.csdn.net/space.php?uid=209919&do=blog&view=me" target="_blank"><b>博客</b></a>  
-                                     <a href="MyFirstPage.html"><b>相册</b></a>  
-                                     <a href="MyFirstPage.html"><b>个人档案</b></a>  
-                                <div>  
-                            </td>  
-                        </tr>  
-                    </table>  
-                </td>  
-            </tr>  
-            <!--middle部分-->  
-            <tr height="620">  
-                <td bgcolor="#E0FFFF">  
-                    <table>  
-                        <tr height="620">  
-                            <!--left部分-->  
-                            <td valign="top" width="260">  
-                                <div style="line-height:150%;"><b style="background-color:#98FB98; color: blue;">|个人档案|</b></div><hr width="120" align="left" style="border: double #00FFFF"/>  
-                                <div style="line-height:150%;">  
-                                <img src="images/tp.jpg" align="left" style="margin-right:10px;"/><br />  
-                                    姓名：#####<br />  
-                                    职业：学生<br />  
-                                    专业：软件工程<br />  
-                                    QQ号：<a href="tencent://message/?uin=362990034&Site=im.qq.com&Menu=yes">810883979</a><br />  
-                                    Email：<a href="mailto:bluesky_taotao@qq.com">bluesky_taotao@qq.com</a><br />  
-                                    嗜好：睡懒觉<br />  
-                                    就读学校：<a href="http://www.nwsuaf.edu.cn" target="_blank">西北农林科技大学</a><br />  
-                                </div><hr style="border: double #00FFFF" />  
-                                <div style="line-height:150%;"><b style="background-color:#98FB98; color: blue;">|背景音乐|</b></div><hr width="120" align="left" style="border: double #00FFFF"/>  
-                                <div style="line-height:150%;">  
-                                    <center><input id="start" type="button" value="播放" onclick="bgsound.src='http://hb.vnet.cn/wlgs/user/song/102937_201009210730459456234.mp3'"/><font color="red">我是一只小小鸟</font>(IE only)<input id="stop" type="button" value="停止" onclick="bgsound.src=''"/></center>  
-                                </div><hr style="border: double #00FFFF" />  
-                                <div style="line-height:150%;"><b style="background-color:#98FB98; color: blue;">|关于我|</b></div><hr width="120" align="left" style="border: double #00FFFF"/>  
-                                <div style="line-height:150%; font-size:12px;">  
-<pre>介绍自己的内容……   
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>  
-</pre>  
-                                </div><hr style="border: double #00FFFF" />                        
-                            </td>  
-                            <!--middle部分-->  
-                            <td valign="top" id="centertd" width="531">  
-                                <br /><marquee><font color="red">欢迎访问我的个人主页！<br /></font></marquee>  
-                                <div style="line-height:150%;"><b style="background-color:#98FB98; color: blue;">|最新照片|</b></div><hr width="120" align="left" style="border: double #00FFFF"/>  
-                                <div style="background-color:black;">  
-                                    <hr />  
-                                        <marquee scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();">  
-                                            <a href="images/haha.jpg" target="_blank"><img src="images/haha.jpg" width="100" height="100"></a>  
-                                            <a href="images/nc.jpg" target="_blank"><img src="images/nc.jpg" width="100" height="100"></a>  
-                                            <a href="images/haha.jpg" target="_blank"><img src="images/haha.jpg" width="100" height="100"></a>  
-                                            <a href="images/shu.jpg" target="_blank"><img src="images/shu.jpg" width="100" height="100"></a>  
-                                            <a href="images/haha.jpg" target="_blank"><img src="images/haha.jpg" width="100" height="100"></a>  
-                                            <a href="images/woniu.jpg" target="_blank"><img src="images/woniu.jpg" width="100" height="100"></a>  
-                                            <a href="images/haha.jpg" target="_blank"><img src="images/haha.jpg" width="100" height="100"></a>  
-                                            <a href="images/haha.jpg" target="_blank"><img src="images/haha.jpg" width="100" height="100"></a>  
-                                            <a href="images/shu.jpg" target="_blank"><img src="images/shu.jpg" width="100" height="100"></a>  
-                                            <a href="images/haha.jpg" target="_blank"><img src="images/haha.jpg" width="100" height="100"></a>  
-                                        </marquee>  
-                                    <hr />  
-                                </div>  
-                                <div style="line-height:150%;"><b style="background-color:#98FB98; color: blue;">|最新笔记|</b></div><hr width="120" align="left" style="border: double #00FFFF"/>  
-                                <div style="line-height:250%;">  
-                                    <hr /> <img src="images/tp.jpg" width="30" height="30"/> <a href="http://student.csdn.net/space.php?uid=209919&do=blog&id=45822" target="_blank" style="text-decoration: none;">Javascript实现的日期选择插件</a><br />  
-                                    <hr width="80%"/> <img src="images/tp.jpg" width="30" height="30"/> <a href="http://student.csdn.net/space.php?uid=209919&do=blog&id=45459" target="_blank" style="text-decoration: none;">html 根据ip获取当地天气预报</a><br />  
-                                    <hr width="80%"/> <img src="images/tp.jpg" width="30" height="30"/> <a href="http://student.csdn.net/space.php?uid=209919&do=blog&id=40205" target="_blank" style="text-decoration: none;">JDBC数据库编程总结(一)</a><br />  
-                                    <hr width="80%"/> <img src="images/tp.jpg" width="30" height="30"/> <a href="http://student.csdn.net/space.php?uid=209919&do=blog&id=40245" target="_blank" style="text-decoration: none;">JDBC数据库编程总结(二)</a><br />  
-                                    <hr width="80%"/> <img src="images/tp.jpg" width="30" height="30"/> <a href="http://student.csdn.net/space.php?uid=209919&do=blog&id=44691" target="_blank" style="text-decoration: none;">JDBC数据库编程总结(三)</a><br />  
-                                    <hr width="80%"/> <img src="images/tp.jpg" width="30" height="30"/> <a href="http://student.csdn.net/space.php?uid=209919&do=blog&id=36195" target="_blank" style="text-decoration: none;">C/S通信，实现多重及时连接通信</a><br />  
-                                    <hr width="80%"/> <img src="images/tp.jpg" width="30" height="30"/> <a href="http://student.csdn.net/space.php?uid=209919&do=blog&id=34545" target="_blank" style="text-decoration: none;">通过URL对象获取指定网页的内容</a><br />  
-                                    <hr width="80%"/> <img src="images/tp.jpg" width="30" height="30"/> <a href="http://blog.csdn.net/tsyj810883979/archive/2010/09/07/5869001.aspx" target="_blank" style="text-decoration: none;">常用正则表达式收藏</a><br /><hr />  
-                                </div>  
-                            </td>  
-                            <!--right部分-->  
-                            <td valign="top" width="190">  
-                                <div style="line-height:150%;"><b style="background-color:#98FB98; color: blue;">|日历|</b></div><hr width="120" align="left" style="border: double #00FFFF"/>  
-                                <object width="190" height="108">  
-                                    <param name="movie" value="http://www.nshen.net/blog/attachments/month_0505/rili.swf" />  
-                                    <param name="quality" value="high" />  
-                                    <param name="wmode" value="transparent" />  
-                                    <embed src="http://www.nshen.net/blog/attachments/month_0505/rili.swf" type="application/x-shockwave-flash"></embed>  
-                                </object>  
-                                <hr style="border: double #00FFFF" />  
-                                <div style="line-height:150%;"><b style="background-color:#98FB98; color: blue;">|常用搜索|</b></div><hr width="120" align="left" style="border: double #00FFFF"/>  
-                                    <center><a href="http://www.baidu.com/" target="_blank"><img src="images/bd.gif" border="0px" width="90" height="30"></a></center><br />  
-                                    <center><a href="http://www.google.com.hk/" target="_blank"><img src="images/gg.gif" border="0px" width="90" height="30"></a></center><br />  
-                                    <center><a href="http://cn.bing.com/" target="_blank"><img src="images/by.jpg" border="0px" width="100" height="30"></a></center><br />  
-                                <hr style="border: double #00FFFF" />  
-                                <div style="line-height:150%;"><b style="background-color:#98FB98; color: blue;">|好友空间|</b></div><hr width="120" align="left" style="border: double #00FFFF"/>  
-                                    <div style="line-height:200%;">  
-                                        <font color="blue">####的博客空间</font> <a href="http://user.qzone.qq.com/1010904655/infocenter" target="_blank">点击进入</a><br />  
-                                        <font color="blue">####的博客空间</font> <a href="http://user.qzone.qq.com/1003413337/infocenter" target="_blank">点击进入</a><br />  
-                                        <font color="blue">####的博客空间</font> <a href="http://user.qzone.qq.com/942706211/infocenter" target="_blank">点击进入</a><br />  
-                                        <font color="blue">####的博客空间</font> <a href="http://user.qzone.qq.com/292260870/infocenter" target="_blank">点击进入</a><br />  
-                                        <font color="blue">####的博客空间</font> <a href="http://user.qzone.qq.com/314560128/infocenter" target="_blank">点击进入</a><br />  
-                                        <font color="blue">####的博客空间</font> <a href="http://user.qzone.qq.com/450255476/infocenter" target="_blank">点击进入</a>  
-                                    </div>  
-                                <hr style="border: double #00FFFF" />  
-                            </td>  
-                        </tr>  
-                    </table>  
-                </td>  
-            </tr>  
-            <tr height="40">  
-                <td valign="middle" bgcolor="#4169D1" align="center">网页内容由<a href="mailto:bluesky_taotao@qq.com">BluesSky</a>制作于2010年10月21日</td>               
-            </tr>  
-        </table>  
-        <bgsound id="bgsound" src="http://hb.vnet.cn/wlgs/user/song/102937_201009210730459456234.mp3" loop="-1">  
-    </body>  
-</html>  
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a testing demo page">
+    <meta name="keywords" content="testing,html,demo">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Testing Demo Project</title>
+<link rel="stylesheet" type="text/css" href="project.css">
+    <link rel="stylesheet"  href="lib/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="head">
+        <div class="logo_title">
+               <h1>LinuxCast.net Demo Site</h1>
+               <h2>简易的个性主页</h2>
+        </div>
+        <div class="navi">
+           <ul>
+               <li><a href = "">首页</a></li>
+               <li><a href = "">闲言碎语</a></li>
+               <li><a href = "">我是谁</a></li>
+           </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+ 
+ 
+    <div id="wrapper">
+        <div class="main">
+              <div class="item">
+                 <div class="item_img">
+                    <img src="cast.png" alt="Testing Demo Project pic">
+                 </div>
+                 <div class="item_content">
+                    <h3>LinuxCast测试标题测试标题</h3>
+                    <p class="item_info">作者：XXX  发表于：2017年7月15号</p>
+                    <p class="item_desc">LinuxCast测试内容测试内容测试内容测试文字测<br>
+                    测试文字测试文字测试文字测试文字测试文字测试文字</p>
+                 </div>
+              </div>
+              <div class="item">
+                 <div class="item_img">
+                    <img src="cast.png" alt="Testing Demo Project pic">
+                 </div>
+                 <div class="item_content">
+                    <h3>LinuxCast测试标题测试标题</h3>
+                    <p class="item_info">作者：XXX 发表于：2017年7月15号</p>
+                    <p class="item_desc">LinuxCast测试内容测试内容测试内容测试文字测<br>
+                    测试文字测试文字测试文字测试文字测试文字测试文字</p>
+                 </div>
+              </div>
+ 
+ 
+              <div class="item">
+                 <div class="item_img">
+                    <img src="cast.png" alt="Testing Demo Project pic">
+                 </div>
+                 <div class="item_content">
+                    <h3>LinuxCast测试标题测试标题</h3>
+                    <p class="item_info">作者：XXX 发表于：2017年7月15号</p>
+                    <p class="item_desc">LinuxCast测试内容测试内容测试内容测试文字测<br>
+                    测试文字测试文字测试文字测试文字测试文字测试文字</p>
+                 </div>
+              </div>
+ 
+ 
+              <div class="item">
+                 <div class="item_img">
+                    <img src="cast.png" alt="Testing Demo Project pic">
+                 </div>
+                 <div class="item_content">
+                    <h3>LinuxCast测试标题测试标题</h3>
+                    <p class="item_info">作者：XXX 发表于：2017年7月15号</p>
+                    <p class="item_desc">LinuxCast测试内容测试内容测试内容测试文字测<br>
+                    测试文字测试文字测试文字测试文字测试文字测试文字</p>
+                 </div>
+              </div>
+        </div>
+        <div class="side">
+              <div class="author_info">
+                   <div class="author_img">
+                      <img src="author.jpg" alt="Testing Demo project pic">
+                   </div>
+                   <div class="author_desc">
+                      <h4>Double Sweet</h4>
+                      <p>emmm..<br>
+                        emmmmmmmm...</p>
+                   </div>
+              </div>
+              <div class="top_article">
+                   <h4>推荐文章</h4>
+                   <ul>
+                   <li>好文要顶-1</li>
+                   <li>好文要顶-2</li>
+                   <li>好文要顶-3</li>
+                   <li>好文要顶-4</li>
+                   <li>好文要顶-5</li>
+                   </ul>
+              </div>
+              <div class="site-info">
+                   <p>访客：555555</p>
+                   <p>文章：666篇</p>
+              </div>
+        </div>
+        <div class="clear"></div>
+ 
+ 
+    </div>
+ 
+ 
+    <div id="footer">
+      <div class="site_about">
+           <p>2015-2017 CopyRight LinuxCast.net Demo Site</p>
+      </div>
+      <div class="site_link">
+           <ul>
+              <li><a href = "">关于我们</a></li>
+              <li><a href = "">联系我们</a></li>
+              <li><a href = "">使用条款</a></li>
+              <li><a href = "">意见反馈</a></li>
+           </ul>
+      </div>
+      <div class="clear"></div>
+ 
+ 
+    </div>
+ 
+ 
+    <script src="lib/jquery-2.1.1.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
